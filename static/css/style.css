@@ -1,0 +1,170 @@
+html{
+    font-family: Lato, sans-serif;
+}
+
+body{
+    background-color: #121212;
+    color: whitesmoke;
+}
+
+a{
+    color: #1e88e5; /*colocar un color a los links azul clarito para que convine nuestro fondo y letras*/
+    text-decoration: none; /*le quita como los subrayados a los links*/
+}
+
+a:hover{
+
+    text-decoration: underline; /*cuando pase el mouse se vera que esta subrayado un efecto*/
+
+}
+
+/*vamos a cambiar nuestra barra de navegacion*/
+
+.navbar{ /*los puntos los usamos por si estamos usando clases por eso navbar se le antepuso un punto*/
+
+    max-width: 840px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row; /*Investigar que hace mayormente*/
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+/*cambiar lo que es el logo*/
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+.navbar_logo img{
+    width: 180px; /*ancho*/
+    height: 140px; /*largo*/
+    margin-right: 20px; /*separacion con los otros contenidos*/
+}
+
+.navbar_navegacion{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar_navegacion_item{
+    margin-left: 50px; /*margen a la izquierda de 50 espacios o px*/
+}
+
+/*Ahora vamos con el Main*/
+
+.main{
+    max-width: 650px; /*como el tamaño definido del main*/
+    margin: 0 auto;  /*margen 0 de arriba a abajo y auto todo los elemetos al medio*/
+    padding: 0 20px;
+}
+
+/*vamos a darle forma al formulariio*/
+
+.form{
+    width: 100px;
+
+}
+
+.form_label{
+    display: block;
+    margin-bottom: 10pxk;
+    padding: 10px 0px;
+}
+
+/*ahora vamos a modificar el texto y el input*/
+
+.title, .form_textarea{
+    width: 650px;
+    font-size: 18px;
+    padding: 12px 0px;
+    background-color: #2d2d2d;
+    border: none;
+    color: white;
+}
+
+
+.form_submit {
+    background-color: #1e88e5;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 30px; /*como el tamaño del cuadrito 5 arriba y abajo y 30 de izquierda a derecha */
+    border-radius: 10px; /*para que se vea curso sus extremosm*/
+    margin-bottom: 10px;
+}
+
+.form_submit:hover{
+    background: #1565c0;
+}
+
+.entry{
+    background-color: #1f1f1f;
+    margin-top: 50px;
+}
+
+.entry.title{
+    display: inline;
+    font-size: 16px;
+}
+
+.entry_date{
+    color: #1e88e5;
+    font-style: italic;
+}
+
+
+.entry_content{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.footer{
+    background-color: #1f1f1f;
+    padding: 40px 0px;
+    margin-top: 50px;
+    border-top: 4px solid #1e88e5;
+    font-size:  12px;
+}
+
+.footer_content {
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+}
+
+.footer .right{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+
+}
+
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+
+.footer_item{
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
